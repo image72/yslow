@@ -99,6 +99,7 @@ yui:
             > $(BUILD_YUI)/yui$(YUI_MODE).js
 	@echo "done"
 
+#npx uglify-js build/bookmarklet/yslow-bookmarklet.js >> build/bookmarklet/yslow-bookmarklet-min.js
 bookmarklet-files:
 	@echo "building BOOKMARKLET files..."
 	@if [ ! -d $(BUILD_BOOKMARKLET) ]; then mkdir -p $(BUILD_BOOKMARKLET); fi
